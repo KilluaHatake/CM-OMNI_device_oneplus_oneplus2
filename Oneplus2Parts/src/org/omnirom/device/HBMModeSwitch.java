@@ -25,7 +25,7 @@ import android.preference.PreferenceManager;
 
 public class HBMModeSwitch implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/devices/virtual/graphics/fb0/hbm";
+    private static final String FILE = "/sys/devices/virtual/graphics/fb0/rgb";
 
     public static boolean isSupported() {
         return Utils.fileWritable(FILE);
