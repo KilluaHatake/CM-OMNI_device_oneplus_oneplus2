@@ -204,6 +204,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
+TW_THEME := portrait_hdpi
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
