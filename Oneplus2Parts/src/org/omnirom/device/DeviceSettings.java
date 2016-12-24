@@ -49,8 +49,6 @@ public class DeviceSettings extends PreferenceActivity implements
     private TwoStatePreference mMusicSwitch;
     private ListPreference mSliderMode;
     private TwoStatePreference mSwapBackRecents;
-    private TwoStatePreference mSRGBModeSwitch;
-    private TwoStatePreference mHBMModeSwitch;
     private TwoStatePreference mProxiSwitch;
 
     @Override
@@ -91,16 +89,6 @@ public class DeviceSettings extends PreferenceActivity implements
         //mSwapBackRecents = (TwoStatePreference) findPreference(KEY_SWAP_BACK_RECENTS);
         //mSwapBackRecents.setChecked(Settings.System.getInt(getContentResolver(),
         //            Settings.System.BUTTON_SWAP_BACK_RECENTS, 0) != 0);
-
-        mSRGBModeSwitch = (TwoStatePreference) findPreference(KEY_SRGB_SWITCH);
-        mSRGBModeSwitch.setEnabled(SRGBModeSwitch.isSupported());
-        mSRGBModeSwitch.setChecked(SRGBModeSwitch.isEnabled(this));
-        mSRGBModeSwitch.setOnPreferenceChangeListener(new SRGBModeSwitch());
-
-        mHBMModeSwitch = (TwoStatePreference) findPreference(KEY_HBM_SWITCH);
-        mHBMModeSwitch.setEnabled(HBMModeSwitch.isSupported());
-        mHBMModeSwitch.setChecked(HBMModeSwitch.isEnabled(this));
-        mHBMModeSwitch.setOnPreferenceChangeListener(new HBMModeSwitch());
 
         mProxiSwitch = (TwoStatePreference) findPreference(KEY_PROXI_SWITCH);
         mProxiSwitch.setChecked(Settings.System.getInt(getContentResolver(),
