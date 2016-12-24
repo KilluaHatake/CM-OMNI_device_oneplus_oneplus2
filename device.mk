@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8994 \
     liboverlay \
     libtinyxml
+    
+#Op2Extra
+PRODUCT_PACKAGES += \
+    Oneplus2Parts
 
 # Doze mode
 PRODUCT_PACKAGES += \
