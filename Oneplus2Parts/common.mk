@@ -13,10 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_oppo
