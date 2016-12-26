@@ -19,6 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from oneplus2 device
 $(call inherit-product, device/oneplus/oneplus2/device.mk)
 
+# must be before including omni part
+TARGET_BOOTANIMATION_SIZE := 1080x720
+
 # Inherit some common omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
